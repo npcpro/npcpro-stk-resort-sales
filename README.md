@@ -4,7 +4,9 @@
 
 ## GitHub Pages
 
-Push ไป branch `main` แล้วตั้ง Settings → Pages → Source เป็น **GitHub Actions** ระบบใช้ workflow `.github/workflows/pages.yml` เผยแพร่เฉพาะไฟล์เว็บและ assets ไม่เผยแพร่โฟลเดอร์ source หรือเอกสารภายในผ่าน Pages
+เผยแพร่ผ่าน GitHub Pages แบบ Deploy from a branch: branch `main`, โฟลเดอร์ `/ (root)` ไม่ต้องติดตั้ง dependencies หรือใช้ custom workflow ไฟล์ `.nojekyll` เปิดให้เสิร์ฟเว็บ static โดยตรง
+
+GitHub แจ้งว่าแพ็กเกจปัจจุบันยังไม่รองรับ Pages จาก repository Private การเปิดเว็บต้องใช้ repository Public หรือแพ็กเกจที่รองรับ
 
 URL ที่คาดว่าจะได้เมื่อเปิด Pages และ deploy สำเร็จ: https://npcpro.github.io/npcpro-stk-resort-sales/
 
