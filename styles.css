@@ -35,107 +35,14 @@
   font-size: 20px;
 }
 
-.unit-graphic {
-  margin: auto 0 0;
-  padding-top: 18px;
+.unit-photo {
+  margin-top: 14px;
 }
 
-.unit-drawing {
-  display: grid;
-  place-items: end center;
-  height: 145px;
-  padding: 12px 12px 0;
-  background: #e1e8da;
-  border-bottom: 2px solid #91a38b;
-}
-
-.unit-house {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: end;
-  gap: 24px;
-  width: 120px;
-  height: 62px;
-  background: #b6c8a8;
-}
-
-.unit-house::before {
-  position: absolute;
-  inset: -43px -14px auto;
-  height: 44px;
-  background: var(--green);
-  clip-path: polygon(50% 0, 100% 100%, 0 100%);
-  content: "";
-}
-
-.unit-house span {
-  width: 20px;
-  height: 38px;
-  background: var(--green);
-}
-
-.unit-house span + span {
-  height: 20px;
-  margin-bottom: 22px;
-  background: #f7f5ed;
-  border: 2px solid var(--green);
-}
-
-.unit-building {
-  width: min(100%, 220px);
-  padding: 6px 9px 9px;
-  border-top: 6px solid var(--green);
-  background: #b6c8a8;
-}
-
-.unit-building > div {
-  padding: 5px;
-  background: var(--cream);
-}
-
-.unit-building > div + div {
-  margin-top: 4px;
-}
-
-.unit-building--rooms > div {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 5px;
-}
-
-.unit-building--rooms span {
-  height: 22px;
-  border: 2px solid var(--green);
-  background: #d4e1cb;
-}
-
-.unit-building--floors > div {
-  color: var(--green);
-  font-size: 12px;
-  line-height: 1.2;
-  text-align: center;
-}
-
-.unit-graphic figcaption {
-  padding-top: 10px;
-  text-align: center;
-}
-
-.unit-graphic b,
-.unit-graphic figcaption span {
+.unit-photo img {
   display: block;
-}
-
-.unit-graphic b {
-  color: var(--green);
-  font-size: clamp(24px, 2.6vw, 38px);
-  line-height: 1.35;
-}
-
-.unit-graphic figcaption span {
-  color: var(--muted);
-  font-size: 13px;
+  width: 100%;
+  height: auto;
 }
 
 .unit-details p {
@@ -171,10 +78,25 @@
   display: block;
 }
 
+.project-overview {
+  max-width: 640px;
+  margin: 0 auto 24px;
+}
+
 .green-space-map img {
   display: block;
   width: 100%;
   height: auto;
+}
+
+.green-space-map:has(.green-space-outline) {
+  overflow: hidden;
+}
+
+.green-space-map:has(.green-space-outline) img,
+.green-space-outline {
+  transform: scale(1.65);
+  transform-origin: 35% 55%;
 }
 
 .green-space-outline {
